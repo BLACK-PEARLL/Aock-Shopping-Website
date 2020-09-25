@@ -1,0 +1,74 @@
+body{
+    overflow-x: hidden;
+}
+#btn1{
+    margin-left: 95px;
+    background-color:#dfe6e9;
+    justify-content:"center";
+    width:300px;
+}
+#btn1:hover{
+    background-color: #b2bec3;
+}
+.circle_img{
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
+.heig{
+    height:350px;
+}
+.height2{
+    height:250px;
+}
+.card{
+    font-family: 'Do Hyeon', sans-serif;
+}
+.crd1:hover{
+    cursor: pointer;
+    background-color: #596275;
+    border:4px solid #596275;
+    color:white;
+    opacity: 0.8;    
+}
+.crd2:hover{
+cursor: pointer;
+opacity: 0.8;
+}
+.footer{
+    background-color: #596275;
+    color:white;
+    padding:24px;
+    margin:-9px;
+    
+    
+}
+.footer ul {
+     margin:0px;
+     padding: 0px;
+}
+.footer .col-sm-6{
+    margin-bottom: 15px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration-line: none;
+    color:white;
+    cursor: pointer;
+}
+a:hover{
+    color:yellow;
+}
+.foot{
+    padding: 9px;
+    margin-top:10px;
+   display: flex;
+   justify-content: center;
+}
+.foot h6{
+    
+    font-size: 22px;
+    font-family: sans-serif;
+}

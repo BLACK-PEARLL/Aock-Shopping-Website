@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <title>Online Shopping site in India</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#596275; ">
+    <a class="navbar-brand" href="#"><img src="images/main_logo.png" height=34px width=90px></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><b>Wonder Womens</b></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><small>Beauty Products</small></a>
+            <a class="dropdown-item" href="#"><small>Jewellery</small></a>
+            <a class="dropdown-item" href="#"><small>Clothes</small></a>
+            <a class="dropdown-item" href="#"><small>Heels</small></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><b>Marvelous Mens</b></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><small>Face Cleanser</small></a>
+            <a class="dropdown-item" href="#"><small>Watches</small></a>
+            <a class="dropdown-item" href="#"><small>Clothes</small></a>
+            <a class="dropdown-item" href="#"><small>Shoes</small></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-1 ">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+          </div>
+          <input class="form-control mr-sm-2" style="width:300px;" type="search"
+            placeholder="Search for proucts,brands and more..." aria-label="Search">
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-outline-danger mx-2" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-outline-warning" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <hr>
+          <button type="submit" data-toggle="modal" data-target="#signupModal" class="btn" id="btn1">Create
+            an Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- sign up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><b>Your name</b></label>
+              <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter your Name">
+            </div>
+
+            <div class="mb-3">
+              <select class="custom-select" id="inputGroupSelect02"
+                style="width:90px; background-color: rgb(238, 238, 238);">
+                <option selected>IN +91</option>
+                <option value="1">Afghanistan +93</option>
+                <option value="2">Albania +355</option>
+                <option value="3">Algeria +213</option>
+                <option value="4">American Samoa +1</option>
+                <option value="5">Andorra +376</option>
+                <option value="6">Angola +244</option>
+                <option value="7">Antigua & Barbuda +1</option>
+                <option value="8">Argentina +54</option>
+                <option value="9">Armenia +374</option>
+                <option value="10">Aruba +297</option>
+                <option value="11">Australia +61</option>
+                <option value="12">Austria +43</option>
+                <option value="13">Azerbaijan +994</option>
+                <option value="14">Bahamas +1</option>
+                <option value="15">Bahrain +973</option>
+                <option value="16">Bangladesh +880</option>
+                <option value="17">Barbados +1</option>
+                <option value="18">Belarus +375</option>
+                <option value="19">Belgium +32</option>
+                <option value="20">Belize +501</option>
+                <option value="21">Benin +229</option>
+                <option value="23">Bermuda +1</option>
+                <option value="24">Bhutan +975</option>
+                <option value="25">Bolivia +591</option>
+                <option value="26">Bosnia & Herzegovina +387</option>
+                <option value="27">Botswana +267</option>
+                <option value="28">Brazil +55</option>
+                <option value="29">British Virgin Islands +1</option>
+                <option value="30">Brunei +673</option>
+                <option value="31">Bulgaria +359</option>
+                <option value="32">Burkina Faso +226</option>
+                <option value="33">Burundi +257</option>
+                <option value="34">Cambodia +855</option>
+                <option value="35">Cameroon +237</option>
+                <option value="36">Canada +1</option>
+                <option value="37">Cape Verde +238</option>
+                <option value="38">Cayman Islands +1</option>
+                <option value="39">Central African Republic +236</option>
+                <option value="40">Chad +235</option>
+                <option value="41">Chile +56</option>
+                <option value="42">China +86</option>
+                <option value="43">Colombia +57</option>
+                <option value="44">Comoros +269</option>
+                <option value="45">Congo - Brazzaville +242</option>
+                <option value="46">Congo - Kinshasa +243</option>
+                <option value="47">Cook Islands +682</option>
+                <option value="48">Costa Rica +506</option>
+                <option value="49">Croatia +385</option>
+                <option value="50">Cuba +53</option>
+                <option value="51">Cyprus +357</option>
+                <option value="52">Czech Republic +420</option>
+                <option value="53">Côte d’Ivoire +225</option>
+                <option value="54">Denmark +45</option>
+                <option value="55">Djibouti +253</option>
+                <option value="56">Dominica +1</option>
+                <option value="57">Dominican Republic +1</option>
+                <option value="58">Ecuador +593</option>
+                <option value="59">Egypt +20</option>
+                <option value="60">El Salvador +503</option>
+                <option value="61">Equatorial Guinea +240</option>
+                <option value="62">Eritrea +291</option>
+                <option value="63">Estonia +372</option>
+                <option value="64"> Ethiopia +251</option>
+                <option value="65"> Falkland Islands +500</option>
+                <option value="66"> Faroe Islands +298</option>
+                <option value="67"> Fiji +679</option>
+                <option value="68"> Finland +358</option>
+                <option value="69"> France +33</option>
+                <option value="70"> French Guiana +594</option>
+                <option value="71"> French Polynesia +689</option>
+                <option value="72"> Gabon +241</option>
+                <option value="73"> Gambia +220</option>
+                <option value="74"> Georgia +995</option>
+                <option value="75"> Germany +49</option>
+                <option value="76"> Ghana +233</option>
+                <opion value="77"> Gibraltar +350</opion>
+                <opion value="78"> Greece +30</opion>
+                <opion value="79"> Greenland +299</opion>
+                <opion value="80"> Grenada +1</opion>
+                <opion value="81"> Guadeloupe +590</opion>
+                <opion value="82"> Guam +1</opion>
+                <opion value="83"> Guatemala +502</opion>
+                <opion value="84"> Guinea +224</opion>
+                <opion value="85"> Guinea-Bissau +245</opion>
+                <opion value="86"> Guyana +592</opion>
+                <opion value="87"> Haiti +509</opion>
+                <opion value="88"> Honduras +504</opion>
+                <opion value="89"> Hong Kong +852</opion>
+                <opion value="90"> Hungary +36</opion>
+                <opion value="91"> Iceland +354</opion>
+                <opion value="92"> India +91</opion>
+                <opion value="93"> Indonesia +62</opion>
+                <opion value="94"> Iran +98</opion>
+                <opion value="95"> Iraq +964</opion>
+                <opion value="96"> Ireland +353</opion>
+                <opion value="97"> Israel +972</opion>
+                <opion value="98"> Italy +39</opion>
+                <opion value="99"> Jamaica +1</opion>
+                <opion value="100"> Japan +81</opion>
+                <opion value="101"> Jordan +962</opion>
+                <opion value="102"> Kazakhstan +7</opion>
+                <opion value="103"> Kenya +254</opion>
+                <opion value="104"> Kiribati +686</opion>
+                <opion value="105"> Kuwait +965</opion>
+                <opion value="106"> Kyrgyzstan +996</opion>
+                <opion value="107"> Laos +856</opion>
+                <opion value="108"> Latvia +371</opion>
+                <option value="109">Lebanon +961</option>
+                <option value="110">Lesotho +266</option>
+                <option value="111">Liberia +231</option>
+                <option value="112">Libya +218</option>
+                <option value="113">iechtenstein +423</option>
+                <option value="114">Lithuania +370</option>
+                <option value="115">Luxembourg +352</option>
+                <option value="116">Macau +853</option>
+                <option value="117">Macedonia +389</option>
+                <option value="118">Madagascar +261</option>
+                <option value="119">Malawi +265</option>
+                <option value="120">Malaysia +60</option>
+                <option value="121">Maldives +960</option>
+                <option value="123">Mali +223</option>
+                <option value="124">Malta +356</option>
+                <option value="125">Marshall Islands +692</option>
+                <option value="126">Martinique +596</option>
+                <option value="127">Mauritania +222</option>
+                <option value="128">Mauritius +230</option>
+                <option value="129">Mexico +52</option>
+                <option value="130">Micronesia +691</option>
+                <option value="131">Moldova +373</option>
+                <option value="132">Monaco +377</option>
+                <option value="133">Mongolia +976</option>
+                <option value="134">Montenegro +382</option>
+                <option value="135">Montserrat +1</option>
+                <option value="136">Morocco +212</option>
+                <option value="137">Mozambique +258</option>
+                <option value="138">Myanmar (Burma) +95</option>
+                <option value="139">Namibia +264</option>
+                <option value="140">Nauru +674</option>
+                <option value="141">Nepal +977</option>
+                <option value="142">Netherlands +31</option>
+                <option value="143">New Caledonia +687</option>
+                <option value="144">New Zealand +64</option>
+                <option value="145">Nicaragua +505</option>
+                <option value="146">Niger +227</option>
+                <option value="147">Nigeria +234</option>
+                <option value="148"> Niue +683</option>
+                <option value="149">Norfolk Island +672</option>
+                <option value="150"> North Korea +850</option>
+                <option value="151"> Norway +47</option>
+                <option value="152"> Oman +968</option>
+                <option value="153"> Pakistan +92</option>
+                <option value="154"> Palau +680</option>
+                <option value="155"> Palestinian Territories +970</option>
+                <option value="156"> Panama +507</option>
+                <option value="157"> Papua New Guinea +675</option>
+                <option value="158"> Paraguay +595</option>
+                <option value="159"> Peru +51</option>
+                <option value="160"> Philippines +63</option>
+                <option value="161"> Poland +48</option>
+                <option value="162"> Portugal +351</option>
+                <option value="163"> Puerto Rico +1</option>
+                <option value="164"> Qatar +974</option>
+                <option value="165"> Romania +40</option>
+                <option value="166"> Russia +7</option>
+                <option value="167"> Rwanda +250</option>
+                <option value="168"> Réunion +262</option>
+                <option value="169"> Samoa +685</option>
+                <option value="170"> San Marino +378</option>
+                <option value="180"> Saudi Arabia +966</option>
+                <option value="181"> Senegal +221</option>
+                <option value="182"> Serbia +381</option>
+                <option value="183">Seychelles +248</option>
+                <option value="184">Sierra Leone +232</option>
+                <option value="185">Singapore +65</option>
+                <option value="186">Slovakia +421</option>
+                <option value="187">Slovenia +386</option>
+                <option value="188"> Solomon Islands +677</option>
+                <option value="189"> Somalia +252</option>
+                <option value="190"> South Africa +</option>
+                <option value="191"> South Korea +82</option>
+                <option value="192"> South Sudan +211</option>
+                <option value="193"> Spain +34</option>
+                <option value="194"> Sri Lanka +94</option>
+                <option value="195"> St. Kitts & Nevis +1</option>
+                <option value="196"> St. Lucia +1</option>
+                <option value="197"> St. Pierre & Miquelon +508</option>
+                <option value="198"> St. Vincent & Grenadines +1</option>
+                <option value="199"> Sudan +249</option>
+                <option value="200"> Suriname +597</option>
+                <option value="201"> Swaziland +268</option>
+                <option value="202"> Sweden +46</option>
+                <option value="203"> Switzerland +41</option>
+                <option value="204"> Syria +963</option>
+                <option value="205"> São Tomé & Príncipe +239</option>
+                <option value="206"> Taiwan +886</option>
+                <option value="207"> Tajikistan +992</option>
+                <option value="208"> Tanzania +255</option>
+                <option value="209"> Thailand +66</option>
+                <option value="300"> Timor-Leste +670</option>
+                <option value="301"> Togo +228</option>
+                <option value="302"> Tonga +676</option>
+                <option value="303"> Trinidad & Tobago +1</option>
+                <option value="304"> Tunisia +216</option>
+                <option value="305"> Turkey +90</option>
+                <option value="306">Turkmenistan +993</option>
+                <option value="307">Turks & Caicos Islands +1</option>
+                <option value="308"> Tuvalu +688</option>
+                <option value="309">U.S. Virgin Islands +1</option>
+                <option value="400"> Uganda +256</option>
+                <option value="401"> Ukraine +380</option>
+                <option value="402"> United Arab Emirates +971</option>
+                <option value="403"> United Kingdom +44</option>
+                <option value="404"> United States +1</option>
+                <option value="405"> Uruguay +598</option>
+                <option value="406"> Uzbekistan +998</option>
+                <option value="407"> Vanuatu +678</option>
+                <option value="408"> Venezuela +58</option>
+                <option value="409"> Vietnam +84</option>
+                <option value="500">Yemen +967</option>
+                <option value="501"> Zambia +260</option>
+                <option value="502"> Zimbabwe +263</option>
+                <option value="503"> Åland Islands +358</option>
+              </select>
+              <input type="text" placeholder="Mobile number"
+                style="height: 41px; width:370px; border-radius: 0.25rem; border: 1px solid #ced4da;">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><b>Email</b> </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><b>Password</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1"
+                placeholder="At least 6 characters">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"> <b>Confirm Password</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div>We will send you a text to verify your phone.</div>
+
+            <div>Message and Data rates any apply.</div>
+            <div class="my-2" style="display:flex; justify-content:center;">
+              <button type="submit" class="btn btn-warning" style="width:400px;">Continue</button>
+            </div>
+            <hr>
+            <p>Already have an account? &ensp; <span class="text-primary">Sign in &ensp; <i class='fas fa-angle-right'
+                  style="color:#007bff;"></i></span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide my-md-5 my-sm-3" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/main_page/carousel/1.png" class="d-block w-100" height="400" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main_page/carousel/2.png" class="d-block w-100" height="400" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main_page/carousel/3.png" class="d-block w-100" height="400" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main_page/carousel/4.png" class="d-block w-100" height="400" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main_page/carousel/5.png" class="d-block w-100  h-md-50" height="400" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main_page/carousel/6.png" class="d-block w-100  h-md-50" height="400" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <section>
+    <div class="d-flex justify-content-center my-md-4">
+      <h1 style="font-family: 'Do Hyeon', sans-serif;">Items in Bag</h1>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col-sm-3 my-4 my-md-0">
+          <div class="card crd1">
+            <a href="/dress.html"><img src="images/main_page/Items in bag/11.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">Dresses</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd1">
+            <a href="/top.html"><img src="images/main_page/Items in bag/12.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">Tops</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd1">
+            <a href="/saree.html"><img src="images/main_page/Items in bag/13.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">Sarees</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd1">
+            <a href="/kurta.html"><img src="images/main_page/Items in bag/14.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">Kurtas</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 my-4">
+        <div class="col-sm-3">
+          <div class="card crd1">
+            <a href="/tshirt.html"><img src="images/main_page/Items in bag/tshirt (1).jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title ">T-shirts</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 ">
+          <div class="card crd1">
+            <a href="/shirt.html"><img src="images/main_page/Items in bag/shirt.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body  d-flex justify-content-center">
+              <h5 class="card-title">Shirts</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card crd1">
+            <a href="/jeans.html"><img src="images/main_page/Items in bag/jeans.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body  d-flex justify-content-center">
+              <h5 class="card-title">Jeans</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card crd1">
+            <a href="/shoes.html"><img src="images/main_page/Items in bag/shoes.jpg" class="card-img-top heig img-fluid" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-center">Shoes</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="d-flex justify-content-center my-md-4">
+      <h1 style="font-family: 'Do Hyeon', sans-serif;">TOP BRAND WITH US!!</h1>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col-sm-3 my-4 my-md-0">
+          <div class="card crd1">
+            <a href=""><img id="img1" src="images/main_page/Brands/hrx.png" class="card-img-top height2 img-fluid" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd1">
+            <a href=""><img src="images/main_page/Brands/levis.jpg"  class="card-img-top height2 img-fluid"
+                alt="..."></a>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd1">
+            <a href=""><img src="images/main_page/Brands/pepe_jeans.png" class="card-img-top height2 img-fluid"
+                alt="..."></a>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd1">
+            <a href=""><img src="images/main_page/Brands/allen_solly.jpg" class="card-img-top height2 img-fluid"
+                alt="..."></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="d-flex justify-content-center my-md-4">
+      <h1 style="font-family: 'Do Hyeon', sans-serif;">HOME DECORATORS</h1>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col-sm-3 my-4 my-md-0">
+          <div class="card crd2">
+            <a href="#"><img id="img1" src="images/main_page/Home_deco/41.jpg"
+                class="card-img-top heig img-fluid" alt="...">
+            </a>
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <h1 class="card-title">Furnitures</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd2">
+            <a href="#"><img src="images/main_page/Home_deco/42.jpg" class="card-img-top heig img-fluid"
+                alt="..."></a>
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <h1 class="card-title crd">Interior<br>Design</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-0">
+          <div class="card crd2">
+            <a href="#"><img src="images/main_page/Home_deco/43.jpg" class="card-img-top heig img-fluid" onmouseover="showhead1()"
+                alt="..."></a>
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <h1 class="card-title crd">Mirrors</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 my-3 my-md-2">
+
+          <button type="button" class="btn btn-secondary">View More
+            <i class='fas fa-angle-double-right'></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="d-flex justify-content-center my-md-4">
+      <h1 style="font-family: 'Do Hyeon', sans-serif;">JEWELRY FOR BEST OCCASION</h1>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col mb-4">
+          <div class="card crd1">
+            <img src="images/main_page/Jewllery/21.jpg" class="card-img-top height2" alt="...">
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card crd1">
+            <img src="images/main_page/Jewllery/22.jpg" class="card-img-top height2" alt="...">
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card crd1">
+            <img src="images/main_page/Jewllery/27.jpg" class="card-img-top height2" alt="...">
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card crd1">
+            <img src="images/main_page/Jewllery/26.jpg" class="card-img-top height2" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="d-flex justify-content-center mt-md-3 mb-md-1">
+      <h1 style="font-family: 'Do Hyeon', sans-serif;">WEDDING SEASON</h1>
+    </div>
+    <div id="carouselExampleIndicators2" class="carousel slide my-md-2 my-sm-1" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/main_page/Wedding/31.jpg" class="d-block w-100" height="450" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/main_page/Wedding/32.jpg" class="d-block w-100" height="450" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/main_page/Wedding/33.jpg" class="d-block w-100" height="450" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/main_page/Wedding/34.jpg" class="d-block w-100" height="450" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/main_page/Wedding/35.jpg" class="d-block w-100  h-md-50" height="450" alt="...">
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-md-3  col-sm-6">
+        <h4>YOUR ACCOUNT</h4>
+        <ul>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Change Location</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Online Help</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Informations</a></li>
+          <li><a href="#">FAQ'S</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4>POLICIES</h4>
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privecy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Billing System</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4>OUR OFFER</h4>
+        <ul>
+          <li><a href="#">New Products</a></li>
+          <li><a href="#">Top Sellers</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Manufactures</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row foot">
+     <h6>Copyright © Aock Inc. All rights reserved.</h6>
+    </div>
+</footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
